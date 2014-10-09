@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0709894919E748B2000A3715 /* UIColorCSSConvertible.h in Headers */ = {isa = PBXBuildFile; fileRef = 0709894819E748B2000A3715 /* UIColorCSSConvertible.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0709895319E748B2000A3715 /* UIColorCSSConvertibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709895219E748B2000A3715 /* UIColorCSSConvertibleTests.swift */; };
+		0709895D19E748E9000A3715 /* UIColor+CSSConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709895C19E748E9000A3715 /* UIColor+CSSConvertible.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		0709894E19E748B2000A3715 /* UIColorCSSConvertibleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIColorCSSConvertibleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0709895119E748B2000A3715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0709895219E748B2000A3715 /* UIColorCSSConvertibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorCSSConvertibleTests.swift; sourceTree = "<group>"; };
+		0709895C19E748E9000A3715 /* UIColor+CSSConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CSSConvertible.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				0709894819E748B2000A3715 /* UIColorCSSConvertible.h */,
 				0709894619E748B1000A3715 /* Supporting Files */,
+				0709895C19E748E9000A3715 /* UIColor+CSSConvertible.swift */,
 			);
 			path = UIColorCSSConvertible;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0709895D19E748E9000A3715 /* UIColor+CSSConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +302,7 @@
 		0709895719E748B2000A3715 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -307,12 +312,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		0709895819E748B2000A3715 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
