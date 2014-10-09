@@ -9,4 +9,7 @@ var color4: UIColor = "rgba(255, 255, 255, 0.2)"
 var color5: UIColor = "#FF0000"
 
 "#FF0000".CGColor
+
+var label = UILabel(frame: CGRectZero)
+label.textColor = "rgb(255, 255, 255)"
 ```
