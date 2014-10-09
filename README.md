@@ -1,6 +1,6 @@
 # UIColorCSSConvertible
 
-#### Create UIColors with CSS
+Create UIColors with CSS
 
 ```swift
 var color1: UIColor = "hsla(0,100%,50%,0.2)"
