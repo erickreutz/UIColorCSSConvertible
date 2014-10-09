@@ -5,6 +5,9 @@
 //  Created by Eric on 10/9/14.
 //  Copyright (c) 2014 erickreutz. All rights reserved.
 //
+//  Influenced almost entirely on fabric.js color functions
+//  http://fabricjs.com/docs/fabric.js.html#line4422
+//
 
 import UIKit
 import Foundation
